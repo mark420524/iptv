@@ -1,0 +1,12 @@
+{
+	"name": "iptv",
+	"scripts": {
+		"download": "./script/download.sh",
+		"handler": "node script/handler.js"
+	},
+	"author": "mark",
+	"license": "MIT",
+	"dependencies": {
+
+	}
+}
