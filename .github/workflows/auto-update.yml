@@ -13,8 +13,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '14'
-        run: npm run download
-        run: npm run handler
+        run: |
+          npm run download
+          npm run handler
 
       - name: List files in the repository
         run: |
