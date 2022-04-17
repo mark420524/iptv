@@ -22,4 +22,15 @@ jobs:
         run: |
           ls ${{ github.workspace }}/data
           ls ${{ github.workspace }}/output
+      - name: deploy iptv stream
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          repository-name: mark420524/iptvapi
+          branch: gh-pages
+          folder: output
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          git-config-name: iptvapi-bot[bot]
+          git-config-email: markjava@foxmail.com
+          commit-message: '[Bot] deploy to mark420524/iptvapi'
+          clean: false
       - run: echo "🍏 This job's status is ${{ job.status }}."
