@@ -15,6 +15,7 @@ jobs:
           node-version: '14'
       - name: build channel stream 
         run: |
+          chmod +x ./script/download.sh
           npm run download
           npm run handler
       - name: List files in the repository
