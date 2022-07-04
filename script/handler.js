@@ -63,7 +63,7 @@ function main(){
 			let newArr = JSON.stringify(cn_stream)//将数组转成json格式
 			  
 		   fs.writeFile('output/iptvstream.json', newArr, 'utf8', (err) => {
-		     console.log('写入成功', err)
+		     //console.log('写入功', err)
 		   })
 			
 		})
