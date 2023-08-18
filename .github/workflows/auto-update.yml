@@ -23,7 +23,7 @@ jobs:
           ls ${{ github.workspace }}/data
           ls ${{ github.workspace }}/output
       - name: deploy iptv stream
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           repository-name: mark420524/iptvapi
           branch: gh-pages
